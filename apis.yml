@@ -62,6 +62,8 @@ apis:
       - type: HelpCenter
         url: https://help.boomy.com/
 common:
+  - type: DomainSecurity
+    url: security/boomy-domain-security.yml
   - type: Website
     url: https://boomy.com/
   - type: Signup
