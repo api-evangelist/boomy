@@ -2,7 +2,19 @@ aid: boomy
 url: https://raw.githubusercontent.com/api-evangelist/boomy/refs/heads/main/apis.yml
 name: Boomy
 kind: company
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: free
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Free
+  confidence: medium
+  source:
+    - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/boomy.png
 tags:
   - AI Music
   - Generative
@@ -12,7 +24,7 @@ tags:
   - Web App
   - Mobile App
 created: '2026-05-23'
-modified: '2026-05-23'
+modified: '2026-07-25'
 specificationVersion: '0.19'
 description: >-
   Boomy is a consumer-facing generative music platform that lets anyone
@@ -22,45 +34,7 @@ description: >-
   publish a public, self-serve developer API; integrations and partner
   arrangements (DSP distribution, licensing) are handled directly by the
   Boomy team rather than through a documented public API surface.
-apis:
-  - aid: boomy:web-app
-    name: Boomy Web App
-    description: >-
-      The primary Boomy creation surface, a browser-based app for generating,
-      editing, and releasing AI-composed songs. There is no documented
-      public REST API; the web app is the supported integration point for
-      creators.
-    humanURL: https://boomy.com/
-    baseURL: https://boomy.com
-    tags:
-      - Web App
-      - Creator Tool
-      - Generative
-    properties:
-      - type: ProductPage
-        url: https://boomy.com/
-      - type: Signup
-        url: https://boomy.com/sign-up
-  - aid: boomy:distribution
-    name: Boomy Distribution
-    description: >-
-      Built-in distribution that ships Boomy-created songs to major
-      streaming services (Spotify, Apple Music, Amazon Music, YouTube
-      Music, TikTok, and others) and pays creators a share of streaming
-      royalties. Operated as a service inside the Boomy product rather
-      than as a public API.
-    humanURL: https://boomy.com/
-    baseURL: https://boomy.com
-    tags:
-      - Distribution
-      - DSP
-      - Royalties
-      - Streaming
-    properties:
-      - type: ProductPage
-        url: https://boomy.com/
-      - type: HelpCenter
-        url: https://help.boomy.com/
+apis: []
 common:
   - type: DomainSecurity
     url: security/boomy-domain-security.yml
